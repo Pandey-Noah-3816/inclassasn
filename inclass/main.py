@@ -11,9 +11,16 @@ class TestCase(unittest.TestCase):
     self.assertEqual (print(fib_fn("h")),None)
   def test_case_3(self):
     self.assertEqual (factorial_fn(2), 2)
+  def test_case_1a(self):
+    self.assertEqual (factorial_fn(0), 1)
 
 def test_fib():
   assert (fib_fn(2)) == 1
+def test_fact():
+  assert (factorial_fn(-1)) == "bad"
+def test_fact():
+  assert (factorial_fn(0)) == 1
+
 
 
 
